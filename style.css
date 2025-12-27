@@ -65,3 +65,6 @@ textarea {
   background-color: rgb(255, 83, 83);
   color: white;
 }
+button{
+  user-select: none;
+}

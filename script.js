@@ -12,6 +12,8 @@ const handleClick = () => {
   if (!topic && !text) return;
   count++;
   const clone = template.content.cloneNode(true);
+  clone.querySelector(".window").style.top = `${count * 5}px`;
+  clone.querySelector(".window").style.left = `${(count * 5) + 310}px`;
   clone.querySelector(".topic").innerText = topic;
   clone.querySelector(".text").innerText = text;
   clone.querySelector(".delete-btn").addEventListener("click", (e) => {
