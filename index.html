@@ -10,23 +10,28 @@
     <div id="container">
       <form>
         <h1>Create Note</h1>
-        <label for="topic-input">Topic</label><br />
-        <input type="text" /><br />
-        <label for="text-area">Write Your Note Here</label><br />
-        <textarea name="" id="text-area" rows="8" cols="30"></textarea><br />
-        <button type="button">Add</button>
+        <label for="topic-input">Topic</label>
+        <br />
+        <input type="text" id="topic-input" maxlength="20" placeholder="Write Your Topic Here"/>
+        <br />
+        <label for="text-area">Write Your Note Here</label>
+        <br />
+        <textarea name="" id="text-area" rows="8" cols="30" placeholder="Write Your Note Here"></textarea>
+        <br />
+        <button type="button" id="add-btn">Add</button>
       </form>
     </div>
+    <div id="sticky-notes"></div>
     <template id="template">
       <div class="window">
-        <div id="top-bar">
-          <button class="delete-btn">X</button>
+        <div class="top-bar">
+          <span></span><span class="topic">Topic</span><button class="delete-btn">X</button>
         </div>
-        <div>
-          <h3>Topic</h3>
-          <p>Notes</p>
+        <div class="main-bar">
+          <p class="text">Notes</p>
         </div>
       </div>
     </template>
   </body>
+  <script src="./script.js"></script>
 </html>
