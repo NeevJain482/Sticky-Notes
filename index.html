@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sticky Notes</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div>
+      <form>
+        <h1>Create Note</h1>
+        <label for="topic-input">Topic</label>
+        <input type="text" />
+        <label for="text-area">Write Your Note Here</label>
+        <textarea name="" id="text-area" rows="50" cols="100"></textarea>
+        <button type="button">Add</button>
+      </form>
+    </div>
+    <template id="template">
+      <div class="window">
+        <div id="top-bar">
+          <button class="delete-btn">X</button>
+        </div>
+        <div>
+          <h3>Topic</h3>
+          <p>Notes</p>
+        </div>
+      </div>
+    </template>
+  </body>
+</html>
