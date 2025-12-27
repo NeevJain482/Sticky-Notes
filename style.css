@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#container {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  margin: 5px;
+  padding: 20px 0;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+input {
+  width: 180px;
+  padding: 3px;
+  margin: 3px;
+}
+label {
+  margin: 3px;
+}
+textarea {
+  resize: none;
+}
+button{
+    border: none;
+    padding: 8px 16px;
+    font-weight: bold;
+}
